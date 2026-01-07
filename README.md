@@ -4,14 +4,14 @@
 ![Status](https://img.shields.io/badge/Status-Coming%20Soon-ff6b35?style=for-the-badge)
 ![Launch](https://img.shields.io/badge/Launch-Q2%202025-1a3a52?style=for-the-badge)
 
-A modern, responsive, and accessible landing page for VayoCare - an AI-powered elderly care startup in India. This page is designed to capture early interest and build a waitlist before the official Q2 2025 launch.
+A modern, responsive, and accessible landing page for VayoCare - an intelligent elderly care startup in India. This page is designed to capture early interest and build a waitlist before the official Q2 2025 launch.
 
 ## 🎯 Overview
 
-**VayoCare** is an AI-powered 24/7 monitoring and companionship platform for elderly parents living alone. Our mission is to empower families to provide exceptional care for their loved ones, regardless of distance.
+**VayoCare** is an intelligent 24/7 monitoring and companionship platform for elderly parents living alone. Our mission is to empower families to provide exceptional care for their loved ones, regardless of distance.
 
 ### Key Features of the Platform
-- 🎯 **Fall Detection**: AI-powered instant fall detection with computer vision
+- 🎯 **Fall Detection**: Intelligent instant fall detection with computer vision
 - 🗣️ **Voice Companion**: Multilingual AI assistant (8+ Indian languages)
 - 💊 **Health Tracking**: Medication reminders, vitals monitoring, pattern analysis
 - 📱 **Family Dashboard**: Real-time updates accessible from anywhere

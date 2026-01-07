@@ -16,6 +16,19 @@
     </div>
     <div class="scroll-progress" id="scrollProgress"></div>
     
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator">
+        <div class="indicator-dot active" data-section="0" title="Home"></div>
+        <div class="indicator-dot" data-section="1" title="Challenge"></div>
+        <div class="indicator-dot" data-section="2" title="Transition"></div>
+        <div class="indicator-dot" data-section="3" title="Solution"></div>
+        <div class="indicator-dot" data-section="4" title="How It Works"></div>
+        <div class="indicator-dot" data-section="5" title="Why VayoCare"></div>
+        <div class="indicator-dot" data-section="6" title="Mission"></div>
+        <div class="indicator-dot" data-section="7" title="Get Started"></div>
+        <div class="indicator-dot" data-section="8" title="Contact"></div>
+    </div>
+    
     <nav class="nav" id="nav">
         <div class="container">
             <a href="#" class="logo">
@@ -222,49 +235,11 @@
                 <span class="label">Why VayoCare</span>
                 <h2><span>Not Just Different,</span> <span class="accent">Better</span></h2>
             </div>
-            <div class="comparison">
-                <div class="compare vayocare">
-                    <div class="compare-header">
-                        <svg viewBox="0 0 100 100" width="30" height="30"><circle cx="50" cy="50" r="45" fill="#0d7377"/><text x="50" y="70" font-size="60" text-anchor="middle" fill="#ff6b35">♥</text></svg>
-                        <span>VayoCare</span>
-                    </div>
-                    <div class="price">₹2,999/mo</div>
-                    <ul>
-                        <li class="yes">✓ 24/7 AI monitoring</li>
-                        <li class="yes">✓ Fall detection</li>
-                        <li class="yes">✓ Voice (8+ languages)</li>
-                        <li class="yes">✓ Health tracking</li>
-                        <li class="yes">✓ Smart sensors</li>
-                        <li class="yes">✓ Dashboard</li>
-                        <li class="yes">✓ Emergency</li>
-                        <li class="yes">✓ Privacy-first</li>
-                        <li class="yes">✓ Hardware included</li>
-                    </ul>
-                </div>
-                <div class="compare traditional">
-                    <div class="compare-header">
-                        <span class="icon">👤</span>
-                        <span>Traditional</span>
-                    </div>
-                    <div class="price">₹15-25K/mo</div>
-                    <ul>
-                        <li class="partial">~ 8-hour only</li>
-                        <li class="no">✗ No tech</li>
-                        <li class="no">✗ One language</li>
-                        <li class="partial">~ Basic help</li>
-                        <li class="no">✗ No monitoring</li>
-                        <li class="no">✗ No updates</li>
-                        <li class="partial">~ Depends</li>
-                        <li class="no">✗ Privacy concerns</li>
-                        <li class="no">✗ Human dependency</li>
-                    </ul>
-                </div>
-            </div>
             <div class="usp">
-                <div class="usp-item"><span>🇮🇳</span><h4>Made for India</h4><p>Cultural context</p></div>
-                <div class="usp-item"><span>🤖</span><h4>True AI</h4><p>Advanced ML</p></div>
-                <div class="usp-item"><span>💰</span><h4>10x Affordable</h4><p>Fraction of cost</p></div>
-                <div class="usp-item"><span>🔐</span><h4>Privacy Sacred</h4><p>Video stays local</p></div>
+                <div class="usp-item"><span>🇮🇳</span><h4>Made for India</h4><p>Cultural context, 8+ languages</p></div>
+                <div class="usp-item"><span>🤖</span><h4>True AI</h4><p>Advanced ML models</p></div>
+                <div class="usp-item"><span>💰</span><h4>10x Affordable</h4><p>Fraction of traditional cost</p></div>
+                <div class="usp-item"><span>🔐</span><h4>Privacy Sacred</h4><p>Video stays local, never in cloud</p></div>
             </div>
         </div>
     </section>
@@ -283,13 +258,54 @@
         <div class="container">
             <h2><span>Ready to give your parents</span> <span class="accent">the care they deserve?</span></h2>
             <p>Join our waitlist for early access. Launching Q2 2025.</p>
-            <form class="cta-form" id="ctaForm">
-                <input type="email" placeholder="Your email" required>
-                <button type="submit"><span>Get Early Access</span> →</button>
-            </form>
+            <button class="open-form-btn" id="openFormBtn"><span>Join the Waitlist</span> →</button>
             <div class="trust"><span>🔒 Privacy</span><span>📧 No spam</span><span>🇮🇳 Made in India</span></div>
         </div>
     </section>
+    
+    <!-- Modal Form -->
+    <div class="modal" id="joinModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">×</button>
+            <div class="modal-header">
+                <svg viewBox="0 0 100 100" width="50" height="50">
+                    <circle cx="50" cy="50" r="45" fill="#0d7377"/>
+                    <text x="50" y="70" font-size="60" text-anchor="middle" fill="#ff6b35">♥</text>
+                </svg>
+                <h3>Join VayoCare Waitlist</h3>
+                <p>Be among the first to bring intelligent care to your loved ones</p>
+            </div>
+            <form class="waitlist-form" id="waitlistForm">
+                <div class="form-group">
+                    <label>Your Name *</label>
+                    <input type="text" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number *</label>
+                    <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" name="city" placeholder="Your city">
+                </div>
+                <div class="form-group">
+                    <label>How did you hear about us?</label>
+                    <select name="source">
+                        <option value="">Select an option</option>
+                        <option value="social">Social Media</option>
+                        <option value="friend">Friend/Family</option>
+                        <option value="search">Search Engine</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn"><span>Join Waitlist</span> →</button>
+            </form>
+        </div>
+    </div>
     
     <footer class="footer">
         <div class="container">
@@ -299,7 +315,7 @@
                 <p>Caring Beyond Distance</p>
             </div>
             <div class="footer-links">
-                <div><h4>Product</h4><a href="#solution">Features</a><a href="#how">How</a><a href="#why">Pricing</a></div>
+                <div><h4>Product</h4><a href="#solution">Features</a><a href="#how">How It Works</a><a href="#why">Why VayoCare</a></div>
                 <div><h4>Company</h4><a href="#">About</a><a href="#">Careers</a><a href="#">Blog</a></div>
                 <div><h4>Contact</h4><a href="mailto:hello@vayocare.com">hello@vayocare.com</a></div>
             </div>

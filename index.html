@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VayoCare - AI-Powered Elderly Care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="custom-cursor" id="customCursor">
+        <svg viewBox="0 0 100 100" width="50" height="50">
+            <circle cx="50" cy="50" r="45" fill="#0d7377" opacity="0.8"/>
+            <text x="50" y="68" font-size="50" text-anchor="middle" fill="#ff6b35">♥</text>
+        </svg>
+    </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <nav class="nav" id="nav">
+        <div class="container">
+            <a href="#" class="logo">
+                <svg viewBox="0 0 100 100" width="40" height="40">
+                    <circle cx="50" cy="50" r="45" fill="#0d7377"/>
+                    <text x="50" y="70" font-size="60" text-anchor="middle" fill="#ff6b35">♥</text>
+                </svg>
+                <span>VayoCare</span>
+            </a>
+            <div class="nav-links">
+                <a href="#problem">Challenge</a>
+                <a href="#solution">Solution</a>
+                <a href="#how">How</a>
+                <a href="#why">Why</a>
+            </div>
+            <span class="badge">Q2 2025</span>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-shapes">
+            <div class="shape s1"></div>
+            <div class="shape s2"></div>
+            <div class="shape s3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg viewBox="0 0 100 100" width="16" height="16">
+                        <circle cx="50" cy="50" r="45" fill="#0d7377"/>
+                        <text x="50" y="70" font-size="60" text-anchor="middle" fill="#ff6b35">♥</text>
+                    </svg>
+                    Intelligent Elderly Care
+                </div>
+                <h1 class="hero-title">
+                    <span class="word">Caring</span>
+                    <span class="word">Beyond</span>
+                    <span class="word accent">Distance</span>
+                </h1>
+                <p class="hero-text">Intelligent monitoring and companionship for elderly parents. Peace of mind for you, safety for them.</p>
+                <!--<form class="email-form" id="heroForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><span>Join Waitlist</span> →</button>
+                </form>-->
+                <div class="stats">
+                    <div class="stat"><strong class="num" data-target="140">0</strong>M+ <span>Elderly in India</span></div>
+                    <div class="stat"><strong class="num" data-target="5">0</strong>M+ <span>NRIs with parents</span></div>
+                    <div class="stat"><strong class="num" data-target="24">0</strong>/7 <span>Coverage</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+    
+    <section class="section" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="label">The Challenge</span>
+                <h2><span>The Reality Families</span> <span class="accent">Face Every Day</span></h2>
+            </div>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-num">01</div>
+                    <div class="icon">🌍</div>
+                    <h3>Distance & Worry</h3>
+                    <p>Over <strong>5M Indians</strong> abroad with elderly parents. Constant worry affects work and peace of mind.</p>
+                    <div class="stat-box"><strong>73%</strong> worry daily</div>
+                </article>
+                <article class="card">
+                    <div class="card-num">02</div>
+                    <div class="icon">⚠️</div>
+                    <h3>Safety Concerns</h3>
+                    <p><strong>1 in 3 seniors</strong> fall yearly. Emergencies often go undetected for hours.</p>
+                    <div class="stat-box"><strong>1 in 3</strong> fall yearly</div>
+                </article>
+                <article class="card">
+                    <div class="card-num">03</div>
+                    <div class="icon">💔</div>
+                    <h3>Loneliness & Cost</h3>
+                    <p>Caregivers cost <strong>₹15-25K/month</strong> for 8 hours only. Loneliness causes decline.</p>
+                    <div class="stat-box"><strong>₹20K+</strong> for 8hrs</div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <section class="transition">
+        <div class="container">
+            <h2 class="big-text"><span>There's a</span> <span class="accent">better way</span></h2>
+        </div>
+    </section>
+    
+    <section class="section dark" id="solution">
+        <div class="container">
+            <div class="section-header center">
+                <span class="label">Solution</span>
+                <h2><span>Introducing</span> <span class="brand">VayoCare</span></h2>
+                <p class="subtitle">AI monitoring + voice companion + health tracking. All at a fraction of the cost.</p>
+            </div>
+            <div class="features">
+                <div class="tabs-nav">
+                    <button class="tab active" data-tab="fall">🎯 Fall Detection</button>
+                    <button class="tab" data-tab="voice">🗣️ Voice Companion</button>
+                    <button class="tab" data-tab="health">💊 Health</button>
+                    <button class="tab" data-tab="dashboard">📱 Dashboard</button>
+                    <button class="tab" data-tab="emergency">🚨 Emergency</button>
+                    <button class="tab" data-tab="privacy">🔒 Privacy</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="fall">
+                        <div class="panel-demo"><div class="scan"></div><div class="detect">AI Analyzing</div></div>
+                        <div class="panel-text">
+                            <h3>AI Fall Detection</h3>
+                            <p>Instant detection using computer vision. Alerts within seconds.</p>
+                            <ul><li>✓ Instant AI detection</li><li>✓ Multi-channel alerts</li><li>✓ Low-light capable</li><li>✓ No wearables</li></ul>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="voice">
+                        <div class="panel-demo"><div class="chat"><div class="msg in">Good morning!</div><div class="msg out">हाँ, अच्छी नींद</div></div></div>
+                        <div class="panel-text">
+                            <h3>Voice Companion</h3>
+                            <p>8+ Indian languages. Natural conversations, reminders, support.</p>
+                            <ul><li>✓ 8+ languages</li><li>✓ Natural conversation</li><li>✓ Voice reminders</li><li>✓ Combats loneliness</li></ul>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="health">
+                        <div class="panel-demo"><div class="metric">BP: <strong>120/80</strong> <small class="good">Normal</small></div></div>
+                        <div class="panel-text">
+                            <h3>Health Tracking</h3>
+                            <p>Medication reminders, vitals monitoring, pattern analysis.</p>
+                            <ul><li>✓ Medication reminders</li><li>✓ BP & glucose</li><li>✓ Trend analysis</li><li>✓ Doctor alerts</li></ul>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="dashboard">
+                        <div class="panel-demo"><div class="dash"><div>✓ Active</div><div>🍽️ Lunch 1:30</div><div>🚶 2340 steps</div></div></div>
+                        <div class="panel-text">
+                            <h3>Family Dashboard</h3>
+                            <p>Real-time updates from anywhere. Daily summaries included.</p>
+                            <ul><li>✓ Real-time updates</li><li>✓ Daily summaries</li><li>✓ Video calls</li><li>✓ Multiple access</li></ul>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="emergency">
+                        <div class="panel-demo"><div class="sos">SOS</div></div>
+                        <div class="panel-text">
+                            <h3>Emergency Response</h3>
+                            <p>One-touch SOS, automatic alerts, multi-channel notifications.</p>
+                            <ul><li>✓ One-touch SOS</li><li>✓ Auto fall alerts</li><li>✓ Multi-channel</li><li>✓ Contact cascade</li></ul>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="privacy">
+                        <div class="panel-demo"><div class="shield">🔒</div><div class="flow">📹 → Local → <span class="x">☁️</span></div></div>
+                        <div class="panel-text">
+                            <h3>Privacy First</h3>
+                            <p>Video processed on-device. Never stored in cloud.</p>
+                            <ul><li>✓ On-device processing</li><li>✓ No cloud storage</li><li>✓ Metadata only</li><li>✓ Encrypted</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="how">
+        <div class="container">
+            <div class="section-header center">
+                <span class="label">Process</span>
+                <h2><span>Simple to Start,</span> <span class="accent">Easy to Use</span></h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <svg viewBox="0 0 100 100" width="50" height="50"><circle cx="50" cy="50" r="45" fill="#0d7377"/><text x="50" y="68" font-size="40" text-anchor="middle" fill="#ff6b35">♥</text></svg>
+                    <span class="num">01</span>
+                    <h3>Quick Setup</h3>
+                    <p>Professional installation in 2 hours</p>
+                </div>
+                <div class="step">
+                    <svg viewBox="0 0 100 100" width="50" height="50"><circle cx="50" cy="50" r="45" fill="#0d7377"/><text x="50" y="68" font-size="40" text-anchor="middle" fill="#ff6b35">♥</text></svg>
+                    <span class="num">02</span>
+                    <h3>AI Learns</h3>
+                    <p>System learns routines within days</p>
+                </div>
+                <div class="step">
+                    <svg viewBox="0 0 100 100" width="50" height="50"><circle cx="50" cy="50" r="45" fill="#0d7377"/><text x="50" y="68" font-size="40" text-anchor="middle" fill="#ff6b35">♥</text></svg>
+                    <span class="num">03</span>
+                    <h3>Instant Alerts</h3>
+                    <p>Falls trigger immediate notifications</p>
+                </div>
+                <div class="step">
+                    <svg viewBox="0 0 100 100" width="50" height="50"><circle cx="50" cy="50" r="45" fill="#0d7377"/><text x="50" y="68" font-size="40" text-anchor="middle" fill="#ff6b35">♥</text></svg>
+                    <span class="num">04</span>
+                    <h3>Stay Connected</h3>
+                    <p>Dashboard access from anywhere</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="why">
+        <div class="container">
+            <div class="section-header">
+                <span class="label">Why VayoCare</span>
+                <h2><span>Not Just Different,</span> <span class="accent">Better</span></h2>
+            </div>
+            <div class="comparison">
+                <div class="compare vayocare">
+                    <div class="compare-header">
+                        <svg viewBox="0 0 100 100" width="30" height="30"><circle cx="50" cy="50" r="45" fill="#0d7377"/><text x="50" y="70" font-size="60" text-anchor="middle" fill="#ff6b35">♥</text></svg>
+                        <span>VayoCare</span>
+                    </div>
+                    <div class="price">₹2,999/mo</div>
+                    <ul>
+                        <li class="yes">✓ 24/7 AI monitoring</li>
+                        <li class="yes">✓ Fall detection</li>
+                        <li class="yes">✓ Voice (8+ languages)</li>
+                        <li class="yes">✓ Health tracking</li>
+                        <li class="yes">✓ Smart sensors</li>
+                        <li class="yes">✓ Dashboard</li>
+                        <li class="yes">✓ Emergency</li>
+                        <li class="yes">✓ Privacy-first</li>
+                        <li class="yes">✓ Hardware included</li>
+                    </ul>
+                </div>
+                <div class="compare traditional">
+                    <div class="compare-header">
+                        <span class="icon">👤</span>
+                        <span>Traditional</span>
+                    </div>
+                    <div class="price">₹15-25K/mo</div>
+                    <ul>
+                        <li class="partial">~ 8-hour only</li>
+                        <li class="no">✗ No tech</li>
+                        <li class="no">✗ One language</li>
+                        <li class="partial">~ Basic help</li>
+                        <li class="no">✗ No monitoring</li>
+                        <li class="no">✗ No updates</li>
+                        <li class="partial">~ Depends</li>
+                        <li class="no">✗ Privacy concerns</li>
+                        <li class="no">✗ Human dependency</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="usp">
+                <div class="usp-item"><span>🇮🇳</span><h4>Made for India</h4><p>Cultural context</p></div>
+                <div class="usp-item"><span>🤖</span><h4>True AI</h4><p>Advanced ML</p></div>
+                <div class="usp-item"><span>💰</span><h4>10x Affordable</h4><p>Fraction of cost</p></div>
+                <div class="usp-item"><span>🔐</span><h4>Privacy Sacred</h4><p>Video stays local</p></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="mission">
+        <div class="container">
+            <blockquote>
+                <div class="q">"</div>
+                <p>We believe every senior deserves to age gracefully in comfort, with dignity, safety, and companionship.</p>
+                <footer><strong>VayoCare Mission</strong><span>100,000 homes by 2030</span></footer>
+            </blockquote>
+        </div>
+    </section>
+    
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2><span>Ready to give your parents</span> <span class="accent">the care they deserve?</span></h2>
+            <p>Join our waitlist for early access. Launching Q2 2025.</p>
+            <form class="cta-form" id="ctaForm">
+                <input type="email" placeholder="Your email" required>
+                <button type="submit"><span>Get Early Access</span> →</button>
+            </form>
+            <div class="trust"><span>🔒 Privacy</span><span>📧 No spam</span><span>🇮🇳 Made in India</span></div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <svg viewBox="0 0 100 100" width="40" height="40"><circle cx="50" cy="50" r="45" fill="#0d7377"/><text x="50" y="70" font-size="60" text-anchor="middle" fill="#ff6b35">♥</text></svg>
+                <span>VayoCare</span>
+                <p>Caring Beyond Distance</p>
+            </div>
+            <div class="footer-links">
+                <div><h4>Product</h4><a href="#solution">Features</a><a href="#how">How</a><a href="#why">Pricing</a></div>
+                <div><h4>Company</h4><a href="#">About</a><a href="#">Careers</a><a href="#">Blog</a></div>
+                <div><h4>Contact</h4><a href="mailto:hello@vayocare.com">hello@vayocare.com</a></div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 VayoCare. Made with ♥ in India</p>
+                <p>Launching Q2 2025</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
